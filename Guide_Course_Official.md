@@ -76,3 +76,5 @@
     5:14:04 - Binary Search
     5:19:22 - Timing Our Search Scripts
     5:20:41 - Big O Runtime of Search Algorithms
+
+![Profile](https://profile-summary-for-github.com/user/CarlosViniMSouza)
