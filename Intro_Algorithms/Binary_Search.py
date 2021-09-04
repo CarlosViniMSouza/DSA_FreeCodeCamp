@@ -17,3 +17,24 @@ def binary_search(list, target):
     return -1
 
 # end to function (mode: iterative)
+
+# Recursive Search Engine:
+
+def recursive_search_engine(list, target, start = 0, end=None):
+    # structure if's:
+    if end is None:
+        end = len(list) - 1
+    if start > end:
+        return -1
+
+    mid = (start + end) // 2
+
+    if target == list[mid]:
+        return mid
+    else:
+        if target < list[mid]:
+            return recursive_search_engine(list, target, start, mid-1)
+        else:
+            return recursive_search_engine(list, target, mid+1, end)
+
+# end to function (mode: recursive)
